@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng nhập</h1>
+        <form method="POST">
+            <!-- <label for="email">Email:</label><br> -->
+            <input class="info-input email-input" type="email" id="login_email" name="login_email" placeholder="Nhập email" required>
+
+            <!-- <label for="password">Password:</label><br> -->
+            <input class="info-input password-input" type="password" id="login_password" name="login_password" placeholder="Nhập mật khẩu" required>
+
+            <button class="login-btn btn btn-success" type="submit" id="login" name="login">Login</button>
+            <a class="forget-password" href="">Forget Password?</a>
+
+            <hr>
+        </form>
+        <a href="/register"><button class="register-btn">Register</button></a>
+
+    </div>
+</body>
+</html>

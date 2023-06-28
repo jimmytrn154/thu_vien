@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng ký</h1>
+        <form method="POST">
+            <input class="info-input email-input" type="email" id="email" name="email" placeholder="Nhập email" required>
+
+            <input class="info-input password-input" type="password" id="password" name="password" placeholder="Nhập password" required>
+
+            <button class="register-btn btn btn-success" type="submit" id="register" name="register">Register</button>
+        </form>
+    </div>
+</body>
+</html>

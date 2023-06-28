@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='xin-chao.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div class="home-page">
+        <div class="left">
+          <h1><strong>V-library, Xin chào!</strong></h1>
+          <br>
+          <h2><strong>Cần tìm những cuốn sách online?</strong></h2>
+          <p>Chúc mừng bạn đã đến đúng nơi!</p>
+          <div class="btn">
+            <a href="/login"><button>Đăng nhập</button></a><br><br>
+            <a href="/register"><button>Đăng ký</button></a><br><br>
+          </div>
+        </div>
+        <div class="right">
+          <div class="logo">
+            <img src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="500px">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
