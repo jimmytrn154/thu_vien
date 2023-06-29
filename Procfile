@@ -1,1 +1,1 @@
-web: gunicorn testab1c_copy:app
+web: gunicorn app:testab1c_copy
